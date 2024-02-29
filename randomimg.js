@@ -19,10 +19,10 @@ async function generatore() {
  // inizio codice per randomrazza
 
  const imageContainer = document.getElementById("image-container");
-
+5
  async function generaRazza() {
      try {
-         let risposta = await fetch("https://dog.ceo/api/breed/hound/afghan/images/random/3");
+         let risposta = await fetch("https://dog.ceo/api/breed/hound/images/random/8");
          let risp = await risposta.json();
          generateImages(risp.message);
      } catch (e) { 

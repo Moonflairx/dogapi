@@ -8,18 +8,43 @@
     <title>Random dog</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Home</a>
+  <style>  
+    /* body {
+      /* background-color :  #D2BBA0; 
+   } 
+
+    nav {
+      background-color: #ce862b;
+    } */
+  </style>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Indietro</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Cerca</a>
+        </li>
+      </ul>
+     
+      <div class="position-absolute top-50 start-50 translate-middle">
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <button class="btn btn-outline-success" id="random" onclick="generatore()">Search</button>
+          </div>
+        </div>
+      </div>
+      
+      </div>
     </div>
-  </nav>
-  <h1>Random img</h1>
-  <nav class="navbar bg-body-tertiary">
-    <div class="container-fluid">
-      <button class="btn btn-outline-success" id="random" onclick="generatore()">Search</button>
-    </div>
-  </nav>
-  <img id="random-image" src="">
+  </div>
+</nav>
+
+ 
+  <div id="image-random">
+  <img  id="random-image" src="">
+</div>
 
   <script src="randomimg.js"></script>
 </body>

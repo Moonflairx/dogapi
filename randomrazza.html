@@ -8,20 +8,33 @@
     <title>Sottorazza</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Home</a>
+          <a class="navbar-brand" href="index.html">Indietro</a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Genera razza</a>
+              </li>
+            </ul>
+           
+            <div class="position-absolute top-50 start-50 translate-middle">
+              <div class="row justify-content-center">
+                <div class="col-auto">
+                  <button class="btn btn-outline-success" id="random" onclick="generaRazza()">Cerca</button>
+                </div>
+              </div>
+            </div>
+            
+            </div>
+          </div>
         </div>
-    </nav>
-
-    <h1>Random razza</h1>
-    <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-            <button class="btn btn-outline-success" id="random-razza" onclick="generaRazza()">Search</button>
-        </div>
-    </nav>
-    
-    <div id="image-container"></div>
+      </nav>
+      
+      
+    <div class ="razza-card" id="image-container">
+       
+    </div>
 
     <script src="randomimg.js"></script>
 </body>
